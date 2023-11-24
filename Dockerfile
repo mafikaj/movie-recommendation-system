@@ -1,14 +1,13 @@
-# Use an official Python runtime as a parent image
-FROM python:3.8-slim
+FROM python:3.8
 
-# Set the working directory to /app
+# Install spaCy and download the English model
+RUN pip install spacy && python -m spacy download en_core_web_md
+
+# Set the working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Copy the application files
+COPY watch_next.py .
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
-
-# Run watch_next.py when the container launches
-CMD ["python", "./watch_next.py"]
+# Run the script
+CMD ["python", "watch_next.py"]
