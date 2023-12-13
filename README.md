@@ -11,7 +11,7 @@ This project implements a Movie Recommendation System based on semantic similari
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/movie-recommendation-system.git
+   git clone https://github.com/mafikaj/movie-recommendation-system.git
    cd movie-recommendation-system
    ```
 
