@@ -1,1 +1,1 @@
-https://github.com/mafikaj/Watch-Next-Recommendation.git
+https://github.com/mafikaj/movie-recommendation-system.git

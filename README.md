@@ -1,12 +1,36 @@
-# Semantic Similarity Analysis
+# Movie Recommendation System
 
-This project uses spaCy and cosine similarity to recommend movies based on the similarity of their descriptions. The movie descriptions are provided in the `watch_next.py` script.
+This project implements a Movie Recommendation System based on semantic similarity analysis of movie descriptions.
 
-## How to Use
+### Prerequisites
 
-1. **Prerequisites:** Ensure you have Python installed on your machine.
+- Docker Installed on your Machine
 
-2. **Installation:** Install the required dependencies by running the following command:
+## Instructions:
+
+1. **Clone the repository:**
+
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/your-username/movie-recommendation-system.git
+   cd movie-recommendation-system
    ```
+
+2. **Build the Docker image:**
+
+   ```bash
+   docker build -t movie-recommendation .
+   ```
+
+3. **Run the Docker container:**
+
+   ```bash
+   docker run movie-recommendation
+   ```
+
+4. **Follow the prompts and provide a movie description when prompted to get a recommendation.**
+
+Feel free to explore and modify the code for your specific use case!
+
+---
+
+**Note:** Ensure that Docker is installed on your system before running the container. If you encounter any issues, refer to the Docker documentation for installation instructions: [Docker Installation Guide](https://docs.docker.com/get-docker/).
